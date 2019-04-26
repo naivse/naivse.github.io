@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/owlcarousel/css/owl.carousel.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="/assets/styles/css/styles.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3 col-lg-2">
+                    <div class="header-top__logo">
+                        <a href="#"><img src="images/template/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-3 col-lg-2">
+                    <div>
+                        <select name="city" id="sources" class="search-form sources" placeholder="Москва">
+                            <option value="profile">Profile</option>
+                            <option value="word">Word</option>
+                            <option value="hashtag">Hashtag</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="header-feedback d-flex justify-content-end">
+                        <a class="header-feedback__link header-feedback__link--call" href="#">
+                            8 800 500 55 55
+                        </a>
+                        <a class="header-feedback__link header-feedback__link--order" href="#">
+                            Заказать звонок
+                        </a>
+                    </div>
+                    <nav class="header-menu">
+                        <ul class="d-flex justify-content-between">
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">О компании</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Новости</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Акции</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Доставка и оплата</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Статьи</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Где купить</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 pr-0">
+                    <div class="navbar-bottom__input">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn dropdown-toggle navbar-bottom__input-button" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Каталог продукции
+                                    <span class="navbar-bottom__input-vertical-line"></span>
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                            <div class="navbar-bottom__form-control">
+                                <input type="text" class="form-control navbar-bottom__form-control__input"
+                                       aria-label="Text input with dropdown button" placeholder="Поиск по каталогу">
+                                <button class="navbar-bottom__form-control__submit" type="submit"><img
+                                        src="images/template/button-submit.png" alt="Клик"></button>
+                            </div>
+                            <ul class="nav nav-pills navbar-bottom__menu">
+                                <li class="nav-item dropdown navbar-bottom__user">
+                                    <a class="nav-link dropdown-toggle active navbar-bottom__user__backroom"
+                                       data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                       aria-expanded="false">
+                                        <i class="fas fa-user-circle navbar-bottom__user__icon"></i>
+                                        Личный кабинет
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown navbar-dropdown__dropdown">
+                                        <ul class="nav nav-pills navbar-dropdown__main-menu" id="pills-tab"
+                                            role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active navbar-dropdown__enter" id="pills-home-tab"
+                                                   data-toggle="pill" href="#pills-home" role="tab"
+                                                   aria-controls="pills-home" aria-selected="true">
+                                                    Вход
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link navbar-dropdown__registration" id="pills-profile-tab"
+                                                   data-toggle="pill" href="#pills-profile" role="tab"
+                                                   aria-controls="pills-profile" aria-selected="false">
+                                                    Регистрация
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade navbar-dropdown--enter" id="pills-home"
+                                                 role="tabpanel" aria-labelledby="pills-home-tab">
+                                                <form>
+                                                    <div class="form-group row">
+                                                        <label for="inputEmail3"
+                                                               class="col-sm-2 col-form-label label__name">Email</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="email" class="form-control" id="inputEmail3"
+                                                                   placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="inputPassword3"
+                                                               class="col-sm-2 col-form-label label__name">Пароль</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="password" class="form-control"
+                                                                   id="inputPassword3" placeholder="Пароль">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-sm-2 label__name"></div>
+                                                        <div class="col-sm-10">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                       id="gridCheck1">
+                                                                <label class="form-check-label label__name"
+                                                                       for="gridCheck1">
+                                                                    Запомнить меня
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-sm-10">
+                                                            <button type="submit"
+                                                                    class="btn btn-primary navbar-bottom--enter-button">
+                                                                Войти
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane fade  show active" id="pills-profile" role="tabpanel"
+                                                 aria-labelledby="pills-profile-tab">
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputName4" class="label__name">ФИО</label>
+                                                            <input type="text" class="form-control" id="inputName4">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputEmail4" class="label__name">Email</label>
+                                                            <input type="email" class="form-control" id="inputEmail4">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputPhone4" class="label__name">Телефон</label>
+                                                            <input type="tel" class="form-control" id="inputPhone4">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputState" class="label__name">Регион</label>
+                                                            <select id="inputState" class="form-control">
+                                                                <option selected>Choose...</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputOrganization4" class="label__name">Наименование
+                                                                организации</label>
+                                                            <input type="text" class="form-control"
+                                                                   id="inputOrganization4">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputOrganizationCode4"
+                                                                   class="label__name">ИНН</label>
+                                                            <input type="number" class="form-control"
+                                                                   id="inputOrganizationCode4">
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <label for="inputAddress4" class="label__name">Юридический
+                                                                адрес</label>
+                                                            <input type="text" class="form-control" id="inputAddress4"
+                                                                   aria-describedby="textHelp">
+                                                            <small id="textHelp"
+                                                                   class="form-text text-muted label__name-required">Все
+                                                                поля обязательны при регистрации
+                                                            </small>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit"
+                                                            class="btn btn-primary navbar-bottom--registratiton-button">
+                                                        Зарегестрироваться
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item navbar-bottom__basket">
+                                    <a class="nav-link navbar-bottom__basket__link" href="#">
+                                        <i class="fas fa-shopping-basket navbar-bottom__basket__icon"></i>
+                                        Корзина пуста
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="category">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="nav-promo">
+                    <ul class="nav-promo__themes">
+                        <li class="nav-promo__bonus">
+                            <i class="fas fa-gift nav-promo__bonus__icon"></i>
+                            <a class="nav-promo__bonus__title" href="#">акции</a>
+                        </li>
+                        <li class="nav-promo__bonus">
+                            <i class="fas fa-tag nav-promo__bonus__icon"></i>
+                            <a class="nav-promo__bonus__title" href="#">распродажа</a>
+                        </li>
+                        <li class="nav-promo__bonus">
+                            <i class="far fa-snowflake nav-promo__bonus__icon"></i>
+                            <a class="nav-promo__bonus__title" href="#">зимний ассортимент</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-bar__category">
+                    <ul class="nav-bar__category__items">
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                Аксессуары
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item nav-bar__category__item--active">
+                            <span class="nav-bar__active">
+                                <span class="nav-bar__category__item__vertical-line"></span>
+                                <span class="nav-bar__category__item-title nav-bar__category__item-title--active">
+                                    Блесны, метал. приманки
+                                </span>
+                            </span>
+                            <ul class="nav-bar__category__item__inner">
+                                <li class="nav-bar__category__item__inner__name">
+                                    <a class="nav-bar__category__item__inner__ref" href="#">Цикады</a>
+                                </li>
+                                <li class="nav-bar__category__item__inner__name">
+                                    <a class="nav-bar__category__item__inner__ref nav-bar__category__ite__inner__ref--active"
+                                       href="#">Блесны вращающиеся</a>
+                                </li>
+                                <li class="nav-bar__category__item__inner__name">
+                                    <a class="nav-bar__category__item__inner__ref" href="#">Блесны колеблющиеся</a>
+                                </li>
+                                <li class="nav-bar__category__item__inner__name">
+                                    <a class="nav-bar__category__item__inner__ref" href="#">Пилькеры</a>
+                                </li>
+                                <li class="nav-bar__category__item__inner__name">
+                                    <a class="nav-bar__category__item__inner__ref" href="#">Спиннербайты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                воблеры
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                грузила
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                джиги, чебурашки
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                джиговые крючки
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                инструменты
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                карповая фидерная
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                катушки
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                кивки
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                кормушки
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                коробки, ящики, сумки
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                крючки
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                леска
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                мебель, снаряжение
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                мягкие приманки
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                нахлыстовая программа
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                очки
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                поводки, оснастка
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                подсаки, саки
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                поплавки, мотовила
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                прикормка
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                рекламная продукция
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                спиннинги
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                термосы
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                тубусы, чехлы
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                удилища
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                форелевая программа
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                шнур
+                            </span>
+                        </li>
+                        <li class="nav-bar__category__item">
+                            <span class="nav-bar__category__item-title">
+                                экипировка
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="category-main">
+                    <nav aria-label="breadcrumb">
+                        <ul class="breadcrumb bread-crumb-nav--cat justify-content-start pl-0">
+                            <a class="bread-crumb-nav__item-home" href="#"></a>
+                            <li class="breadcrumb-item bread-crumb-nav__items--cat active">
+                                <a class="bread-crumb-nav__item--cat bread-crumb-nav__item--cat-empty" href="#">
+                                    Блесны, приманки
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h1 class="category-title">
+                        Блесны, металлические приманки
+                    </h1>
+                </div>
+                <form class="dropdown-filter">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="filter-box">
+                                <span class="filter-box__title">
+                                    ценовой диапазон, руб
+                                </span>
+                                <div class="filter-box__items filter-box__input">
+                                    <input class="filter-box__input__min filter--input" type="number" name="input"
+                                           value="" min="100"
+                                           max="12800" placeholder="1340">
+                                    <input class="filter-box__input__mid  js-range-slider" type="number" name="input"
+                                           value="none" data-min="0" data-max="12800" data-from="1340" data-to="8490">
+                                    <input class="filter-box__input__max filter--input" type="number" name="input"
+                                           value="none"
+                                           data-min="500" data-max="12800" placeholder="8490">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="filter-box">
+                                <span class="filter-box__title">
+                                    сортировать
+                                </span>
+                                <div class="filter-box__items filter-box__sort">
+                                    <a href="#" class="filter-box__sort__by filter-box__sort__by--alphabet">по
+                                        алфавиту</a>
+                                    <a href="#" class="filter-box__sort__by filter-box__sort__by--price">по цене</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="filter-box">
+                                <span class="filter-box__title">
+                                    вид
+                                </span>
+                                <div class="filter-box__items filter-box__view">
+                                    <a href="#" class="filter-box__view__by filter-box__view--list">списком</a>
+                                    <a href="#" class="filter-box__view__by filter-box__view--tile">плиткой</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="filter-tech">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card filter-tech--border">
+                                        <div class="card-header p-0 filter-tech__menu" id="headingOne">
+                                            <span class=" filter-tech--dropdown mb-0">
+                                                <button class="btn btn-link filter-tech__settings" type="button"
+                                                        data-toggle="collapse" data-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                    Фильтрация по техническим характеристикам
+                                                </button>
+                                                <button class="filter-tech__clear-button" type="reset">
+                                                    Очистить
+                                                </button>
+                                            </span>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                             data-parent="#accordionExample">
+                                            <div class="card-body filter-tech__card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="filter-tech__inner">
+                                                            <span class="filter-tech__title">вес, гр</span>
+                                                            <div class="filter-tech__input">
+                                                                <input class="filter-tech__input-left__min filter--input"
+                                                                       type="number" name="input" value="none" min="0"
+                                                                       max="150" placeholder="13">
+                                                                <input class="filter-tech__input-left__mid  js-range-slider"
+                                                                       type="number" name="input" value="none"
+                                                                       data-min="0" data-max="150">
+                                                                <input class="filter-tech__input-left__max filter--input"
+                                                                       type="number" name="input" value="none" min="0"
+                                                                       max="150" placeholder="33">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="filter-tech__inner">
+                                                            <span class="filter-tech__title">длина, мм</span>
+                                                            <div class="filter-tech__input">
+                                                                <input class="filter-tech__input-right__min filter--input"
+                                                                       type="number" name="input" value="none" min="0"
+                                                                       max="150" placeholder="36">
+                                                                <input class="filter-tech__input-right__mid js-range-slider"
+                                                                       type="number" name="input" value="none"
+                                                                       data-min="0" data-max="150">
+                                                                <input class="filter-tech__input-right__max filter--input"
+                                                                       type="number" name="input" value="none" min="0"
+                                                                       max="150" placeholder="56">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <hr class="filter-tech__hr">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group filter-tech__select-items">
+                                                            <select class="form-control" id="view">
+                                                                <option>Вид</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group filter-tech__select-items">
+                                                            <select class="form-control" id="rings"
+                                                                    placeholder="Кольца">
+                                                                <option>Кольца</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group filter-tech__select-items">
+                                                            <select class="form-control" id="construction">
+                                                                <option>Конструкция</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="category-brands">
+                    <div class="row mt-1">
+                        <div class="col-lg-3">
+                            <div class="category-brands__wrapper">
+                                <img class="category-brands__img" src="images/pages/category/megabass.png" alt="brand">
+                                <span class="category-brands__title">megabass</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="category-brands__wrapper">
+                                <img class="category-brands__img" src="images/pages/category/savage.png" alt="brand">
+                                <span class="category-brands__title">savage gear</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="category-brands__wrapper">
+                                <img class="category-brands__img" src="images/pages/category/strike.png" alt="brand">
+                                <span class="category-brands__title">strike pro</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="category-brands__wrapper">
+                                <img class="category-brands__img" src="images/pages/category/usami.png" alt="brand">
+                                <span class="category-brands__title">usami</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-cards">
+                    <div class="card p-card p-card--big p-card-category--big">
+                        <img src="images/blocks/section%20popular-goods/goods1.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="corner-disc">
+                            <span class="corner-disc__text">распродажа</span>
+                            <img class="corner-disc__img" src="images/pages/category/discount.png" alt="скидка">
+                        </div>
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                            от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                            3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon p-card-footer__icon--big">
+                        <a class="p-card-footer__ref p-card-footer__ref--big" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card">
+                        <img src="images/blocks/section%20popular-goods/goods2.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                            от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                            3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon">
+                        <a class="p-card-footer__ref" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card">
+                        <img src="images/blocks/section%20popular-goods/goods3.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                         от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                        3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon">
+                       <a class="p-card-footer__ref" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card">
+                        <img src="images/blocks/section%20popular-goods/goods4.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                         от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                        3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon">
+                           <a class="p-card-footer__ref" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card">
+                        <img src="images/blocks/section%20popular-goods/goods5.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                         от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                        3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon">
+                       <a class="p-card-footer__ref" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card">
+                        <img src="images/blocks/section%20popular-goods/goods3.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                            от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                            3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon">
+                        <a class="p-card-footer__ref" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card">
+                        <img src="images/blocks/section%20popular-goods/goods5.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                            от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                            3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon">
+                        <a class="p-card-footer__ref" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card">
+                        <img src="images/blocks/section%20popular-goods/goods4.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                            от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                            3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon">
+                        <a class="p-card-footer__ref" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card">
+                        <img src="images/blocks/section%20popular-goods/goods2.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                            от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                            3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon">
+                        <a class="p-card-footer__ref" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card p-card--big p-card--right">
+                        <img src="images/blocks/section%20popular-goods/goods1.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                            от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                            3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon p-card-footer__icon--big">
+                        <a class="p-card-footer__ref p-card-footer__ref--big" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card">
+                        <img src="images/blocks/section%20popular-goods/goods5.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                            от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                            3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon">
+                        <a class="p-card-footer__ref" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-card">
+                        <img src="images/blocks/section%20popular-goods/goods4.png" class="card-img-top p-card__image"
+                             alt="Товары">
+                        <div class="card-body p-card-body">
+                            <h5 class="card-title p-card-body__title">
+                                <a class="p-card-body__link" href="#">
+                                    Удилища
+                                </a>
+                            </h5>
+                            <p class="card-text p-card-body__offer">
+                                Блесна DAIWA Gekkabjin Kotetsu
+                                3 гр. RED Ikanago 8291
+                            </p>
+                        </div>
+                        <div class="card-footer p-card-footer">
+                    <span class="p-card-footer__price p-card-footer__price--best">
+                            от 2 190 Р
+                        <span class="p-card-footer__text">
+                            оптовая цена
+                        </span>
+                    </span>
+                            <span class="p-card-footer__price">
+                            3 500 Р
+                        <span class="p-card-footer__text">
+                            розница
+                        </span>
+                    </span>
+                            <span class="footer-icon p-card-footer__icon">
+                        <a class="p-card-footer__ref" href="#"></a>
+                    </span>
+                            <div class="p-card__sku">
+                        <span class="p-card__artical">
+                            Арт.:123409
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-pagination">
+                    <nav aria-label="page-navigation">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link category-pagination__link" href="#" tabindex="-1"
+                                   aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only category-pagination__prev">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item category-pagination__item"><a
+                                    class="page-link category-pagination__link" href="#">1</a></li>
+                            <li class="page-item category-pagination__item active">
+                                <a class="page-link category-pagination__link" href="#">2 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item category-pagination__item"><a
+                                    class="page-link category-pagination__link" href="#">3</a></li>
+                            <li class="page-item category-pagination__item"><a
+                                    class="page-link category-pagination__link" href="#">4</a></li>
+                            <li class="page-item category-pagination__item"><a
+                                    class="page-link category-pagination__link" href="#">...</a></li>
+                            <li class="page-item category-pagination__item"><a
+                                    class="page-link category-pagination__link" href="#">11</a></li>
+                            <li class="page-item category-pagination__item">
+                                <a class="page-link category-pagination__link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only category-pagination__next">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer category--footer">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-lg-2">
+                <a href="#"><img src="images/template/logo.png" alt="логотип"></a>
+            </div>
+            <div class="col-lg-8">
+                <nav class="footer-menu-top">
+                    <ul class="d-flex justify-content-between">
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">О компании</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Новости</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Акции</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Статьи</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Где купить</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-2 footer-menu__icons">
+                <a href="#"><i class="fab fa-vk footer--icon"></i></a>
+                <a href="#"><i class="fab fa-instagram footer--icon"></i></a>
+                <a href="#"><i class="fab fa-facebook footer--icon"></i></a>
+                <a href="#"><i class="fas fa-rss footer--icon"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="bottom-menu__hr">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <nav class="footer-menu-bottom-items">
+                    <ul class="pl-0">
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Аксессуары</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Блесны, метал. приманки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Воблеры</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Грузила</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Джиги, чебурашки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Джиговые крючки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Зимний ассортимент</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Инструменты</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Карповая фидерная</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Катушки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Кивки</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <nav class="footer-menu-bottom-items">
+                    <ul class="pl-0">
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Кормушки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Коробки, ящики, сумки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Крючки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Леска</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Мебель, снаряжение</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Мягкие приманки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Нахлыстовая программа</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Очки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Печатная и видео продукция</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Поводки, оснастка</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Подсаки, садки</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <nav class="footer-menu-bottom-items">
+                    <ul class="pl-0">
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Поплавки, мотовила</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Прикормка</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Рекламная продукция</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Спиннинги</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Термосы</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Тубусы, чехлы</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Удилища</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Форелевая программа</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Шнуры</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Экипировка</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right col-md-4">
+                <ul class="footer-menu-bottom-feedback bottom-feedback pl-0">
+                    <li class="bottom-feedback__phone">
+                        <a class="bottom-feedback__phone--numbers" href="#">8 800 500 55 55</a>
+                    </li>
+                    <li class="bottom-feedback__order-call">
+                        <a class="bottom-feedback__order-call--letters" href="#">Заказать звонок</a>
+                    </li>
+                    <li class="bottom-feedback__own-take">
+                        <span class="bottom-feedback__own-take--letters">Адреса самовывоза:</span>
+                    </li>
+                    <li class="bottom-feedback__address bottom-feedback__address--top">
+                        <span class="bottom-feedback__address--take">123400 г. Москва, ул. Ленина, 223, с4</span>
+                    </li>
+                    <li class="bottom-feedback__address">
+                        <span class="bottom-feedback__address--take">123351 г. Москва, ул. Жукова, 34, с1</span>
+                    </li>
+                    <li class="bottom-feedback__address">
+                            <span class="bottom-feedback__address--take">134511 Московская обл.,<br>
+                                Балашиха, ул. Ленина, 64, с9</span>
+                    </li>
+                    <li class="bottom-feedback__address">
+                            <span class="bottom-feedback__address--take">531233 Московская обл.,<br>
+                                Мытищи, Гражданский пр., 41, с4</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-information">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-5">
+                    <div class="footer-information__company-name">
+                        ООО Митсуи, 2019. Все права защищены
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-information__user-rights">
+                        <a class="footer-information__user-rights--color" href="#">Пользовательское соглашение</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 ml-auto col-md-3">
+                    <div class="footer-information__developers">
+                        Разработано <a href="#"><span class="footer-information__developers--best">Serptop</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owlcarousel/js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+<script src="/assets/scripts/js/common.js"></script>
+</body>
+</html>

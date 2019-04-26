@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/owlcarousel/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="/assets/styles/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3 col-lg-2">
+                    <div class="header-top__logo">
+                        <a href="#"><img src="images/template/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-3 col-lg-2">
+                    <div>
+                        <select name="city" id="sources" class="search-form sources" placeholder="Москва">
+                            <option value="profile">Profile</option>
+                            <option value="word">Word</option>
+                            <option value="hashtag">Hashtag</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="header-feedback d-flex justify-content-end">
+                        <a class="header-feedback__link header-feedback__link--call" href="#">
+                            8 800 500 55 55
+                        </a>
+                        <a class="header-feedback__link header-feedback__link--order" href="#">
+                            Заказать звонок
+                        </a>
+                    </div>
+                    <nav class="header-menu">
+                        <ul class="d-flex justify-content-between">
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">О компании</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Новости</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Акции</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Доставка и оплата</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Статьи</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Где купить</a>
+                            </li>
+                            <li class="header-menu--item">
+                                <a class="header-menu--link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 pr-0">
+                    <div class="navbar-bottom__input">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn dropdown-toggle navbar-bottom__input-button" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Каталог продукции
+                                    <span class="navbar-bottom__input-vertical-line"></span>
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                            <div class="navbar-bottom__form-control">
+                                <input type="text" class="form-control navbar-bottom__form-control__input"
+                                       aria-label="Text input with dropdown button" placeholder="Поиск по каталогу">
+                                <button class="navbar-bottom__form-control__submit" type="submit"><img
+                                        src="images/template/button-submit.png" alt="Клик"></button>
+                            </div>
+                            <ul class="nav nav-pills navbar-bottom__menu">
+                                <li class="nav-item dropdown navbar-bottom__user">
+                                    <a class="nav-link dropdown-toggle active navbar-bottom__user__backroom"
+                                       data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                       aria-expanded="false">
+                                        <i class="fas fa-user-circle navbar-bottom__user__icon"></i>
+                                        Личный кабинет
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown navbar-dropdown__dropdown">
+                                        <ul class="nav nav-pills navbar-dropdown__main-menu" id="pills-tab"
+                                            role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active navbar-dropdown__enter" id="pills-home-tab"
+                                                   data-toggle="pill" href="#pills-home" role="tab"
+                                                   aria-controls="pills-home" aria-selected="true">
+                                                    Вход
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link navbar-dropdown__registration" id="pills-profile-tab"
+                                                   data-toggle="pill" href="#pills-profile" role="tab"
+                                                   aria-controls="pills-profile" aria-selected="false">
+                                                    Регистрация
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade navbar-dropdown--enter" id="pills-home"
+                                                 role="tabpanel" aria-labelledby="pills-home-tab">
+                                                <form>
+                                                    <div class="form-group row">
+                                                        <label for="inputEmail3"
+                                                               class="col-sm-2 col-form-label label__name">Email</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="email" class="form-control" id="inputEmail3"
+                                                                   placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="inputPassword3"
+                                                               class="col-sm-2 col-form-label label__name">Пароль</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="password" class="form-control"
+                                                                   id="inputPassword3" placeholder="Пароль">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-sm-2 label__name"></div>
+                                                        <div class="col-sm-10">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                       id="gridCheck1">
+                                                                <label class="form-check-label label__name"
+                                                                       for="gridCheck1">
+                                                                    Запомнить меня
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-sm-10">
+                                                            <button type="submit"
+                                                                    class="btn btn-primary navbar-bottom--enter-button">
+                                                                Войти
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane fade  show active" id="pills-profile" role="tabpanel"
+                                                 aria-labelledby="pills-profile-tab">
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputName4" class="label__name">ФИО</label>
+                                                            <input type="text" class="form-control" id="inputName4">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputEmail4" class="label__name">Email</label>
+                                                            <input type="email" class="form-control" id="inputEmail4">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputPhone4" class="label__name">Телефон</label>
+                                                            <input type="tel" class="form-control" id="inputPhone4">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputState" class="label__name">Регион</label>
+                                                            <select id="inputState" class="form-control">
+                                                                <option selected>Choose...</option>
+                                                                <option>...</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputOrganization4" class="label__name">Наименование
+                                                                организации</label>
+                                                            <input type="text" class="form-control"
+                                                                   id="inputOrganization4">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputOrganizationCode4"
+                                                                   class="label__name">ИНН</label>
+                                                            <input type="number" class="form-control"
+                                                                   id="inputOrganizationCode4">
+                                                        </div>
+                                                        <div class="form-group col-md-12">
+                                                            <label for="inputAddress4" class="label__name">Юридический
+                                                                адрес</label>
+                                                            <input type="text" class="form-control" id="inputAddress4"
+                                                                   aria-describedby="textHelp">
+                                                            <small id="textHelp"
+                                                                   class="form-text text-muted label__name-required">Все
+                                                                поля обязательны при регистрации
+                                                            </small>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit"
+                                                            class="btn btn-primary navbar-bottom--registratiton-button">
+                                                        Зарегестрироваться
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item navbar-bottom__basket">
+                                    <a class="nav-link navbar-bottom__basket__link" href="#">
+                                        <i class="fas fa-shopping-basket navbar-bottom__basket__icon"></i>
+                                        Корзина пуста
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="bread-crumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bread-crumb-nav justify-content-start">
+                        <a class="bread-crumb-nav__item-home" href="#"></a>
+                        <li class="breadcrumb-item bread-crumb-nav__items">
+                            <a class="bread-crumb-nav__item" href="#">
+                                Блесны, приманки
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item bread-crumb-nav__items">
+                            <a class="bread-crumb-nav__item" href="#">
+                                Цикады
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item bread-crumb-nav__items">
+                            <a class="bread-crumb-nav__item" href="#">
+                                Daiwa
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item bread-crumb-nav__items active" aria-current="page">
+                            <a class="bread-crumb-nav__item bread-crumb-nav__item--empty" href="#">
+                                Daiwa Kotetsu
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="card-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card mb-3 card-logout border-0">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5">
+                            <div class="card-logout-preview">
+                                <img src="images/pages/cards/cardpicture.png" class="card-img card-logout__image"
+                                     alt="Товар">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="card-logout-content">
+                                <div class="card-body card-body-logout">
+                                    <div class="card-title">
+                                            <span class="card-title card-body-logout__title">
+                                                <a href="#">Блесны</a>
+                                            </span>
+                                        <span class="card-title card-body-logout__title-artical">
+                                                Арт.:123409
+                                            </span>
+                                    </div>
+                                    <span class="card-title card-body-logout__price">
+                                            <span class="card-title card-body-logout__title-price">
+                                                2 190 Р
+                                            </span>
+                                            <span class="card-title card-body-logout__title-price-text">
+                                                розница
+                                            </span>
+                                        </span>
+                                    <p class="card-text card-body-logout__offer">Блесна DAIWA Gekkabijin<br>
+                                        Kotetsu 3гр Red Ikanago<br>
+                                        8910
+                                    </p>
+                                    <div class="">
+                                            <span class="card-text text-muted card-body-logout__amount">
+                                                    Фасовка: 5 шт.
+                                            </span>
+                                        <span class="card-text card-body-logout__vertical-line"></span>
+                                        <span class="card-text text-muted card-body-logout__second-amount">
+                                                    Мин. партия: 25 шт.
+                                            </span>
+                                    </div>
+                                </div>
+                                <div class="card-footer card-footer-second-page">
+                                    <span class="card-footer-logout__icon">!</span>
+                                    <span class="card-footer-logout__text">
+                                            <a class="card-footer-logout__enter" href="#">Зарегистрируйтесь</a> или <a
+                                            class="card-footer-logout__enter" href="#">войдите</a> в личный кабинет, что бы совершить заказ.<br>
+                                            После регистрации вам будут доступны оптовые цены.
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="brand">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="brand-inner">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img class="brand-image" src="images/pages/cards/brand-logo.png" alt="Бренд">
+                            <span class="brand-title">daiwa</span>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="brand-text">
+                                Блесна Daiwa Gekkabjin Kotetsu - приманка класса “Цикада”. Представлена в трех размерах
+                                и
+                                значительном количестве расцветок, благодаря чему есть возможность подобрать подходящую
+                                приманку для ловли самой разнообразной рыбы в любых условиях.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="card-presentation">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4">
+                <div class="media media-block">
+                    <img src="images/blocks/section%20presentation/spining-icon.png" class="mr-3 media-block__icon"
+                         alt="Ассортемент">
+                    <div class="media-body media-block__text">
+                        <h3 class="media-block__text-title">весь ассортимент в наличии</h3>
+                        <p class="media-block__text-offer">Если товар указан на сайте, он есть на складе. Вы не столкнетесь с
+                            ситуацией, когда товара нет.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <div class="media media-block">
+                    <img src="images/blocks/section%20presentation/fish-icon.png" class="mr-3 media-block__icon"
+                         alt="Опт и розница">
+                    <div class="media-body media-block__text">
+                        <h3 class="media-block__text-title">Любой объем</h3>
+                        <p class="media-block__text-offer">Мы работаем только с оптовиками, но не устанавливаем минимальный
+                            чек заказа. Покупки на любую сумму.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <div class="media media-block">
+                    <img src="images/blocks/section%20presentation/car-icon.png" class="mr-3 media-block__icon media-block__icon--car"
+                         alt="Оперативно работаем">
+                    <div class="media-body media-block__text">
+                        <h3 class="media-block__text-title">Готовим за 1 день</h3>
+                        <p class="media-block__text-offer">Мы готовим заказ к отправке в течении суток. Отправляем по
+                            понедельникам, средам и пятницам.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="popular-goods">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <div class="popular-goods__title">
+                    <h3 class="popular-goods__text">Похожие товары</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 padding-fix">
+                <div class="card p-card p-card--big">
+                    <img src="images/blocks/section%20popular-goods/maincard.png"
+                         class="card-img-top p-card__image--second-page" alt="Товары">
+                    <div class="card-body p-card-body">
+                        <h5 class="card-title p-card-body__title">
+                            <a class="p-card-body__link" href="#">
+                                Удилища
+                            </a>
+                        </h5>
+                        <p class="card-text p-card-body__offer">
+                            Блесна DAIWA Gekkabjin Kotetsu
+                            3 гр. RED Ikanago 8291
+                        </p>
+                    </div>
+                    <div class="card-footer p-card-footer">
+                            <span class="p-card-footer__price p-card-footer__price--best">
+                                    от 2 190 Р
+                                <span class="p-card-footer__text">
+                                    оптовая цена
+                                </span>
+                            </span>
+                        <span class="p-card-footer__price">
+                                    3 500 Р
+                                <span class="p-card-footer__text">
+                                    розница
+                                </span>
+                            </span>
+                        <span class="footer-icon p-card-footer__icon--card-page">
+                                <a class="p-card-footer__ref p-card-footer__ref--next" href="#"></a>
+                            </span>
+                        <div class="p-card__sku">
+                                <span class="p-card__artical">
+                                    Арт.:123409
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-card">
+                    <img src="images/blocks/section%20popular-goods/goods2.png" class="card-img-top p-card__image"
+                         alt="Товары">
+                    <div class="card-body p-card-body">
+                        <h5 class="card-title p-card-body__title">
+                            <a class="p-card-body__link" href="#">
+                                Удилища
+                            </a>
+                        </h5>
+                        <p class="card-text p-card-body__offer">
+                            Блесна DAIWA Gekkabjin Kotetsu
+                            3 гр. RED Ikanago 8291
+                        </p>
+                    </div>
+                    <div class="card-footer p-card-footer">
+                            <span class="p-card-footer__price p-card-footer__price--best">
+                                    от 2 190 Р
+                                <span class="p-card-footer__text">
+                                    оптовая цена
+                                </span>
+                            </span>
+                        <span class="p-card-footer__price">
+                                    3 500 Р
+                                <span class="p-card-footer__text">
+                                    розница
+                                </span>
+                            </span>
+
+                        <div class="p-card__sku">
+                                <span class="p-card__artical">
+                                    Арт.:123409
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-card">
+                    <img src="images/blocks/section%20popular-goods/goods3.png" class="card-img-top p-card__image"
+                         alt="Товары">
+                    <div class="card-body p-card-body">
+                        <h5 class="card-title p-card-body__title">
+                            <a class="p-card-body__link" href="#">
+                                Удилища
+                            </a>
+                        </h5>
+                        <p class="card-text p-card-body__offer">
+                            Блесна DAIWA Gekkabjin Kotetsu
+                            3 гр. RED Ikanago 8291
+                        </p>
+                    </div>
+                    <div class="card-footer p-card-footer">
+                            <span class="p-card-footer__price p-card-footer__price--best">
+                                 от 2 190 Р
+                                <span class="p-card-footer__text">
+                                    оптовая цена
+                                </span>
+                            </span>
+                        <span class="p-card-footer__price">
+                                3 500 Р
+                                <span class="p-card-footer__text">
+                                    розница
+                                </span>
+                            </span>
+
+                        <div class="p-card__sku">
+                                <span class="p-card__artical">
+                                    Арт.:123409
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-card">
+                    <img src="images/blocks/section%20popular-goods/goods4.png" class="card-img-top p-card__image"
+                         alt="Товары">
+                    <div class="card-body p-card-body">
+                        <h5 class="card-title p-card-body__title">
+                            <a class="p-card-body__link" href="#">
+                                Удилища
+                            </a>
+                        </h5>
+                        <p class="card-text p-card-body__offer">
+                            Блесна DAIWA Gekkabjin Kotetsu
+                            3 гр. RED Ikanago 8291
+                        </p>
+                    </div>
+                    <div class="card-footer p-card-footer">
+                            <span class="p-card-footer__price p-card-footer__price--best">
+                                 от 2 190 Р
+                                <span class="p-card-footer__text">
+                                    оптовая цена
+                                </span>
+                            </span>
+                        <span class="p-card-footer__price">
+                                3 500 Р
+                                <span class="p-card-footer__text">
+                                    розница
+                                </span>
+                            </span>
+
+                        <div class="p-card__sku">
+                                <span class="p-card__artical">
+                                    Арт.:123409
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-card">
+                    <img src="images/blocks/section%20popular-goods/goods5.png" class="card-img-top p-card__image"
+                         alt="Товары">
+                    <div class="card-body p-card-body">
+                        <h5 class="card-title p-card-body__title">
+                            <a class="p-card-body__link" href="#">
+                                Удилища
+                            </a>
+                        </h5>
+                        <p class="card-text p-card-body__offer">
+                            Блесна DAIWA Gekkabjin Kotetsu
+                            3 гр. RED Ikanago 8291
+                        </p>
+                    </div>
+                    <div class="card-footer p-card-footer">
+                            <span class="p-card-footer__price p-card-footer__price--best">
+                                 от 2 190 Р
+                                <span class="p-card-footer__text">
+                                    оптовая цена
+                                </span>
+                            </span>
+                        <span class="p-card-footer__price">
+                                3 500 Р
+                                <span class="p-card-footer__text">
+                                    розница
+                                </span>
+                            </span>
+
+                        <div class="p-card__sku">
+                                <span class="p-card__artical">
+                                    Арт.:123409
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="popular-goods__button text-center">
+                    <a class="popular-goods__button--text" href="#">Посмотреть все</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="card-discount">
+    <div class="discount-banner">
+        <div class="discount-banner__bg"></div>
+        <div class="banner-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 discount-text">
+                        <span class="discount-text__attention">!</span>
+                        <p class="discount-text--title">Получите полный каталог наших товаров</p>
+                        <h3 class="discount-text--offer">и скидку 10% на первый заказ</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="discount-form">
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <input type="text" class="form-control" placeholder="Имя">
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </form>
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-lg-2">
+                                        <button type="submit" class="btn btn-primary discount__button">Отправить
+                                            заявку
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-lg-2">
+                <a href="#"><img src="images/template/logo.png" alt="логотип"></a>
+            </div>
+            <div class="col-lg-8">
+                <nav class="footer-menu-top">
+                    <ul class="d-flex justify-content-between">
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">О компании</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Новости</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Акции</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Статьи</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Где купить</a>
+                        </li>
+                        <li class="footer-menu-top__item">
+                            <a class="footer-menu-top--link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-2 footer-menu__icons">
+                <a href="#"><i class="fab fa-vk footer--icon"></i></a>
+                <a href="#"><i class="fab fa-instagram footer--icon"></i></a>
+                <a href="#"><i class="fab fa-facebook footer--icon"></i></a>
+                <a href="#"><i class="fas fa-rss footer--icon"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="bottom-menu__hr">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <nav class="footer-menu-bottom-items">
+                    <ul class="pl-0">
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Аксессуары</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Блесны, метал. приманки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Воблеры</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Грузила</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Джиги, чебурашки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Джиговые крючки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Зимний ассортимент</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Инструменты</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Карповая фидерная</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Катушки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Кивки</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <nav class="footer-menu-bottom-items">
+                    <ul class="pl-0">
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Кормушки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Коробки, ящики, сумки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Крючки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Леска</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Мебель, снаряжение</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Мягкие приманки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Нахлыстовая программа</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Очки</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Печатная и видео продукция</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Поводки, оснастка</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Подсаки, садки</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <nav class="footer-menu-bottom-items">
+                    <ul class="pl-0">
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Поплавки, мотовила</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Прикормка</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Рекламная продукция</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Спиннинги</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Термосы</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Тубусы, чехлы</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Удилища</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Форелевая программа</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Шнуры</a>
+                        </li>
+                        <li class="menu-bottom-first__item">
+                            <a class="menu-bottom-first--link" href="#">Экипировка</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right col-md-4">
+                <ul class="footer-menu-bottom-feedback bottom-feedback pl-0">
+                    <li class="bottom-feedback__phone">
+                        <a class="bottom-feedback__phone--numbers" href="#">8 800 500 55 55</a>
+                    </li>
+                    <li class="bottom-feedback__order-call">
+                        <a class="bottom-feedback__order-call--letters" href="#">Заказать звонок</a>
+                    </li>
+                    <li class="bottom-feedback__own-take">
+                        <span class="bottom-feedback__own-take--letters">Адреса самовывоза:</span>
+                    </li>
+                    <li class="bottom-feedback__address bottom-feedback__address--top">
+                        <span class="bottom-feedback__address--take">123400 г. Москва, ул. Ленина, 223, с4</span>
+                    </li>
+                    <li class="bottom-feedback__address">
+                        <span class="bottom-feedback__address--take">123351 г. Москва, ул. Жукова, 34, с1</span>
+                    </li>
+                    <li class="bottom-feedback__address">
+                            <span class="bottom-feedback__address--take">134511 Московская обл.,<br>
+                                Балашиха, ул. Ленина, 64, с9</span>
+                    </li>
+                    <li class="bottom-feedback__address">
+                            <span class="bottom-feedback__address--take">531233 Московская обл.,<br>
+                                Мытищи, Гражданский пр., 41, с4</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-information">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-5">
+                    <div class="footer-information__company-name">
+                        ООО Митсуи, 2019. Все права защищены
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-information__user-rights">
+                        <a class="footer-information__user-rights--color" href="#">Пользовательское соглашение</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 ml-auto col-md-3">
+                    <div class="footer-information__developers">
+                        Разработано <a href="#"><span class="footer-information__developers--best">Serptop</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/owlcarousel/js/owl.carousel.min.js"></script>
+<script src="/assets/scripts/js/common.js"></script>
+</body>
+</html>
