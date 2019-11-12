@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ставки на спорт</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="body-pic">
+
+    <header class="header d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 d-flex justify-content-between align-items-center">
+                    <a href="index.html" class="header-left">
+                        <img src="https://placehold.it/200x50" alt="Ставки на спорт" width="200" height="50"
+                             class="header-left__img">
+                    </a>
+                    <div class="header-right">
+                        <div class="hamburger-menu">
+                            <input type="checkbox" id="menu__toggle">
+                            <label for="menu__toggle" class="menu__btn">
+                                <span></span>
+                            </label>
+                            <ul class="menu__box">
+                                <li><a href="rating.html" class="menu__item header-right__nav-list-ref">Рейтинг букмекеров</a>
+                                </li>
+                                <li><a href="news.html" class="menu__item header-right__nav-list-ref">Новости букмекеров</a>
+                                </li>
+                                <li><a href="index.html" class="menu__item header-right__nav-list-ref">Ставки на спорт</a></li>
+                            </ul>
+                        </div>
+                        <!--                        <a href="#main-menu" id="toggle" class="header-right-btn">-->
+                        <!--                            <span class="header-right__open">-->
+                        <!--                            </span>-->
+                        <!--                        </a>-->
+                        <!--                        <nav id="main-menu" class="header-right__nav">-->
+                        <!--                            <ul class="menu__box d-flex justify-content-between align-items-center">-->
+                        <!--                                <li class="header-right__nav-list-item openButton">-->
+                        <!--                                    <a href="#" class="menu__item header-right__nav-list-ref">-->
+                        <!--                                        меню-->
+                        <!--                                    </a>-->
+                        <!--                                </li>-->
+                        <!--                                <li class="header-right__nav-list-item openButton">-->
+                        <!--                                    <a href="#" class="menu__item header-right__nav-list-ref">-->
+                        <!--                                        меню-->
+                        <!--                                    </a>-->
+                        <!--                                </li>-->
+                        <!--                                <li class="header-right__nav-list-item openButton">-->
+                        <!--                                    <a href="#" class="menu__item header-right__nav-list-ref">-->
+                        <!--                                        меню-->
+                        <!--                                    </a>-->
+                        <!--                                </li>-->
+                        <!--                            </ul>-->
+                        <!--                        </nav>-->
+                        <!--                            <nav class="header-right__nav">-->
+                        <!--                                <ul class="header-right__nav-list  d-flex justify-content-between align-items-center">-->
+                        <!--                                    <li class="header-right__nav-list-item">-->
+                        <!--                                        <a href="#" class="header-right__nav-list-ref">-->
+                        <!--                                            Ставки на спорт-->
+                        <!--                                        </a>-->
+                        <!--                                        <ul class="header-right__submenu">-->
+                        <!--                                            <li class="header-right__submenu-item">-->
+                        <!--                                                <a href="#" class="header-right__submenu-ref">-->
+                        <!--                                                    футбол-->
+                        <!--                                                </a>-->
+                        <!--                                            </li>-->
+                        <!--                                            <li class="header-right__submenu-item">-->
+                        <!--                                                <a href="#" class="header-right__submenu-ref">-->
+                        <!--                                                    теннис-->
+                        <!--                                                </a>-->
+                        <!--                                            </li>-->
+                        <!--                                            <li class="header-right__submenu-item">-->
+                        <!--                                                <a href="#" class="header-right__submenu-ref">-->
+                        <!--                                                    киберспорт-->
+                        <!--                                                </a>-->
+                        <!--                                            </li>-->
+                        <!--                                        </ul>-->
+                        <!--                                    </li>-->
+                        <!--                                    <li class="header-right__nav-list-item">-->
+                        <!--                                        <a href="#" class="header-right__nav-list-ref">-->
+                        <!--                                            Рейтинг букмекеров-->
+                        <!--                                        </a>-->
+                        <!--                                    </li>-->
+                        <!--                                    <li class="header-right__nav-list-item">-->
+                        <!--                                        <a href="#" class="header-right__nav-list-ref">-->
+                        <!--                                            Новости букмекеров-->
+                        <!--                                        </a>-->
+                        <!--                                    </li>-->
+                        <!--                                </ul>-->
+                        <!--                            </nav>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <section class="main-boxes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="main-title">
+                            Ставки на спорт
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="box">
+                            <ul class="box__list d-flex justify-content-between">
+                                <li class="box-item">
+                                    <div class="box-wrapper">
+                                        <div class="box-wrapper-top">
+                                            <a href="#" class="box-wrapper-top__ref">
+                                                <img src="https://placehold.it/180x80" alt="Букмекер" width="180"
+                                                     height="80" class="box-wrapper-top__ref-img">
+                                            </a>
+                                        </div>
+                                        <div class="box-wrapper-bottom">
+                                            <div class="box-wrapper-bottom__bonus">
+                                                <div class="box-wrapper-bottom__bonus-text">
+                                                    Бонус
+                                                </div>
+                                                <div class="box-wrapper-bottom__bonus-amount">
+                                                    4 990р
+                                                </div>
+                                            </div>
+                                            <a href="#" class="box-wrapper-bottom__ref">
+                                                играть
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="box-item">
+                                    <div class="box-wrapper">
+                                        <div class="box-wrapper-top">
+                                            <a href="#" class="box-wrapper-top__ref">
+                                                <img src="https://placehold.it/180x80" alt="Букмекер" width="180"
+                                                     height="80" class="box-wrapper-top__ref-img">
+                                            </a>
+                                        </div>
+                                        <div class="box-wrapper-bottom">
+                                            <div class="box-wrapper-bottom__bonus">
+                                                <div class="box-wrapper-bottom__bonus-text">
+                                                    Бонус
+                                                </div>
+                                                <div class="box-wrapper-bottom__bonus-amount">
+                                                    4 990р
+                                                </div>
+                                            </div>
+                                            <a href="#" class="box-wrapper-bottom__ref">
+                                                играть
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="box-item">
+                                    <div class="box-wrapper">
+                                        <div class="box-wrapper-top">
+                                            <a href="#" class="box-wrapper-top__ref">
+                                                <img src="https://placehold.it/180x80" alt="Букмекер" width="180"
+                                                     height="80" class="box-wrapper-top__ref-img">
+                                            </a>
+                                        </div>
+                                        <div class="box-wrapper-bottom">
+                                            <div class="box-wrapper-bottom__bonus">
+                                                <div class="box-wrapper-bottom__bonus-text">
+                                                    Бонус
+                                                </div>
+                                                <div class="box-wrapper-bottom__bonus-amount">
+                                                    4 990р
+                                                </div>
+                                            </div>
+                                            <a href="#" class="box-wrapper-bottom__ref">
+                                                играть
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="box-item">
+                                    <div class="box-wrapper">
+                                        <div class="box-wrapper-top">
+                                            <a href="#" class="box-wrapper-top__ref">
+                                                <img src="https://placehold.it/180x80" alt="Букмекер" width="180"
+                                                     height="80" class="box-wrapper-top__ref-img">
+                                            </a>
+                                        </div>
+                                        <div class="box-wrapper-bottom">
+                                            <div class="box-wrapper-bottom__bonus">
+                                                <div class="box-wrapper-bottom__bonus-text">
+                                                    Бонус
+                                                </div>
+                                                <div class="box-wrapper-bottom__bonus-amount">
+                                                    4 990р
+                                                </div>
+                                            </div>
+                                            <a href="#" class="box-wrapper-bottom__ref">
+                                                играть
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <h1 class="content-title">
+                            Главный заголовок
+                        </h1>
+
+                        <table class="rating-table small">
+
+                            <tbody>
+                            <tr>
+                                <th class="table-head" colspan="2">
+                                    #
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="table-head" colspan="2">
+                                    1.
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Букмекер
+                                </td>
+                                <td class="small-value table-logo">
+                                    <a href="https://top-bk.com/bookmaker/betcity/">
+                                        <img src="https://placehold.it/200x35" alt="Лого букмекера">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Рейтинг
+                                </td>
+                                <td class="small-value table-rating">
+                                    <img src="img/7-stars.png"
+                                         title="Бетсити" alt="Рейтинг Бетсити">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Мин. депозит
+                                </td>
+                                <td class="small-value table-deposit">
+                                    10 руб.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Бонус
+                                </td>
+                                <td class="small-value table-bonus">
+                                    50% от суммы первого депозита
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Описание
+                                </td>
+                                <td class="small-value table-description">
+                                    <a href="#" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Сайт
+                                </td>
+                                <td class="small-value table-link">
+                                    <a href="#" class="table-link-ref">
+                                        betcity.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table-head" colspan="2">
+                                    2.
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Букмекер
+                                </td>
+                                <td class="small-value table-logo">
+                                    <a href="#">
+                                        <img src="https://placehold.it/200x35" alt="Лого букмекера">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Рейтинг
+                                </td>
+                                <td class="small-value table-rating">
+                                    <img src="img/7-stars.png" alt="Рейтинг">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Мин. депозит
+                                </td>
+                                <td class="small-value table-deposit">
+                                    500 руб.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Бонус
+                                </td>
+                                <td class="small-value table-bonus">
+                                    1000 руб. за регистрацию
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Описание
+                                </td>
+                                <td class="small-value table-description">
+                                    <a href="#" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Сайт
+                                </td>
+                                <td class="small-value table-link">
+                                    <a href="#" class="table-link-ref">
+                                        csbet.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table-head" colspan="2">
+                                    3.
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Букмекер
+                                </td>
+                                <td class="small-value table-logo">
+                                    <a href="https://top-bk.com/bookmaker/leon/">
+                                        <img src="https://placehold.it/200x35" alt="Лого букмекера">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Рейтинг
+                                </td>
+                                <td class="small-value table-rating">
+                                    <img src="https://top-bk.com/wp-content/themes/topbk/assets/img/rating/img/7-stars.png"
+                                         title="Леон" alt="Рейтинг Леон">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Мин. депозит
+                                </td>
+                                <td class="small-value table-deposit">
+                                    5 руб.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Бонус
+                                </td>
+                                <td class="small-value table-bonus">
+                                    100% от первого депозита
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Описание
+                                </td>
+                                <td class="small-value table-description">
+                                    <a href="#" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Сайт
+                                </td>
+                                <td class="small-value table-link">
+                                    <a href="#" class="table-link-ref">
+                                        csbet.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table-head" colspan="2">
+                                    4.
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Букмекер
+                                </td>
+                                <td class="small-value table-logo">
+                                    <a href="#">
+                                        <img src="https://placehold.it/200x35" alt="Лого букмекера">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Рейтинг
+                                </td>
+                                <td class="small-value table-rating">
+                                    <img src="img/7-stars.png" alt="Рейтинг БУкмекера">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Мин. депозит
+                                </td>
+                                <td class="small-value table-deposit">
+                                    10 руб.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Бонус
+                                </td>
+                                <td class="small-value table-bonus">
+                                    555 руб. за регистрацию
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Описание
+                                </td>
+                                <td class="small-value table-description">
+                                    <a href="#" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Сайт
+                                </td>
+                                <td class="small-value table-link">
+                                    <a href="#" class="table-link-ref">
+                                        csbet.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table-head" colspan="2">
+                                    5.
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Букмекер
+                                </td>
+                                <td class="small-value table-logo">
+                                    <a href="https://top-bk.com/bookmaker/marathon/">
+                                        <img src="https://placehold.it/200x35" alt="Лого букмекера">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Рейтинг
+                                </td>
+                                <td class="small-value table-rating">
+                                    <img src="img/7-stars.png" alt="Рейтинг Букмекера">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Мин. депозит
+                                </td>
+                                <td class="small-value table-deposit">
+                                    100 руб.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Бонус
+                                </td>
+                                <td class="small-value table-bonus">
+                                    Есть
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Описание
+                                </td>
+                                <td class="small-value table-description">
+                                    <a href="#" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Сайт
+                                </td>
+                                <td class="small-value table-link">
+                                    <a href="#" class="table-link-ref">
+                                        csbet.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table-head" colspan="2">
+                                    6.
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Букмекер
+                                </td>
+                                <td class="small-value table-logo">
+                                    <a href="https://top-bk.com/bookmaker/fonbet/">
+                                        <img src="https://placehold.it/200x35" alt="Лого букмекера">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Рейтинг
+                                </td>
+                                <td class="small-value table-rating">
+                                    <img src="img/8-stars.png"
+                                         alt="Рейтинг Букмекера">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Мин. депозит
+                                </td>
+                                <td class="small-value table-deposit">
+                                    100 руб.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Бонус
+                                </td>
+                                <td class="small-value table-bonus">
+                                    Фрибет до 10 000 руб. за регистрацию
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Описание
+                                </td>
+                                <td class="small-value table-description">
+                                    <a href="#" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="small-key">
+                                    Сайт
+                                </td>
+                                <td class="small-value table-link">
+                                    <a href="#" class="table-link-ref">
+                                        csbet.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+
+                        <table class="rating-table stacktable large">
+                            <tbody>
+                            <tr>
+                                <th class="table-head">#</th>
+                                <th class="table-head">Букмекер</th>
+                                <th class="table-head">Рейтинг</th>
+                                <th class="table-head">Мин. депозит</th>
+                                <th class="table-head">Бонус</th>
+                                <th class="table-head">Описание</th>
+                                <th class="table-head">Сайт</th>
+                            </tr>
+
+                            <tr>
+                                <td class="table-position">1.</td>
+                                <td class="table-logo">
+                                    <a href="#">
+                                        <img src="https://placehold.it/118x35" title="Букмекер" alt="Рейтинг Букмекера">
+                                    </a>
+                                </td>
+                                <td class="table-rating">
+                                    <img src="img/rating.png" title="Фонбет" alt="Рейтинг Фонбет">
+                                </td>
+                                <td class="table-deposit">
+                                    10 руб.
+                                </td>
+                                <td class="table-bonus">
+                                    50% от суммы первого депозита
+                                </td>
+                                <td class="table-description">
+                                    <a href="#" title="Обзор и отзывы о Бетсити" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                                <td class="table-link">
+                                    <a href="#" class="table-link-ref">
+                                        betcity.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-position">2.</td>
+                                <td class="table-logo">
+                                    <a href="#">
+                                        <img src="https://placehold.it/118x35" title="Букмекер" alt="Рейтинг Букмекера">
+                                    </a>
+                                </td>
+                                <td class="table-rating">
+                                    <img src="img/rating.png" title="Фонбет" alt="Рейтинг Фонбет">
+                                </td>
+                                <td class="table-deposit">
+                                    500 руб.
+                                </td>
+                                <td class="table-bonus">
+                                    1000 руб. за регистрацию
+                                </td>
+                                <td class="table-description">
+                                    <a href="#" title="Обзор и отзывы о Винлайн" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                                <td class="table-link">
+                                    <a href="#" class="table-link-ref">
+                                        winline.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-position">3.</td>
+                                <td class="table-logo">
+                                    <a href="#">
+                                        <img src="https://placehold.it/118x35" title="Букмекер" alt="Рейтинг Букмекера">
+                                    </a>
+                                </td>
+                                <td class="table-rating">
+                                    <img src="img/rating.png" title="Фонбет" alt="Рейтинг Фонбет">
+                                </td>
+                                <td class="table-deposit">
+                                    5 руб.
+                                </td>
+                                <td class="table-bonus">
+                                    100% от первого депозита
+                                </td>
+                                <td class="table-description">
+                                    <a href="#" title="Обзор и отзывы о Леон" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                                <td class="table-link">
+                                    <a href="#" class="table-link-ref">
+                                        leon.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-position">4.</td>
+                                <td class="table-logo">
+                                    <a href="#">
+                                        <img src="https://placehold.it/118x35" title="Букмекер" alt="Рейтинг Букмекера">
+                                    </a>
+                                </td>
+                                <td class="table-rating">
+                                    <img src="img/rating.png" title="Фонбет" alt="Рейтинг Фонбет">
+                                </td>
+                                <td class="table-deposit">
+                                    10 руб.
+                                </td>
+                                <td class="table-bonus">
+                                    555 руб. за регистрацию
+                                </td>
+                                <td class="table-description">
+                                    <a href="#" title="Обзор и отзывы о Лига Ставок" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                                <td class="table-link">
+                                    <a href="#" class="table-link-ref">
+                                        ligastavok.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-position">5.</td>
+                                <td class="table-logo">
+                                    <a href="#">
+                                        <img src="https://placehold.it/118x35" title="Букмекер" alt="Рейтинг Букмекера">
+                                    </a>
+                                </td>
+                                <td class="table-rating">
+                                    <img src="img/rating.png" title="Фонбет" alt="Рейтинг Фонбет">
+                                </td>
+                                <td class="table-deposit">
+                                    100 руб.
+                                </td>
+                                <td class="table-bonus">
+                                    Есть
+                                </td>
+                                <td class="table-description">
+                                    <a href="#" title="Обзор и отзывы о Марафон" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                                <td class="table-link">
+                                    <a href="#" class="table-link-ref">
+                                        marathonbet.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-position">6.</td>
+                                <td class="table-logo">
+                                    <a href="#">
+                                        <img src="https://placehold.it/118x35" title="Букмекер" alt="Рейтинг Букмекера">
+                                    </a>
+                                </td>
+                                <td class="table-rating">
+                                    <img src="img/rating.png" title="Фонбет" alt="Рейтинг Фонбет">
+                                </td>
+                                <td class="table-deposit">
+                                    100 руб.
+                                </td>
+                                <td class="table-bonus">
+                                    Фрибет до 10 000 руб. за регистрацию
+                                </td>
+                                <td class="table-description">
+                                    <a href="#" title="Обзор и отзывы о Фонбет" class="table-description-ref">
+                                        Обзор
+                                    </a>
+                                </td>
+                                <td class="table-link">
+                                    <a href="#" class="table-link-ref">
+                                        csbet.ru
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="rating-review">
+                            <h2 class="rating-review-title">
+                                Обзор по киберспорту
+                            </h2>
+                            <div class="rating-review-item">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+                                        <div class="rating-review-item-logo">
+                                            <a href="#" class="rating-review-item-ref">
+                                                <img src="https://placehold.it/200x49" alt="Лого букмекера"
+                                                     class="rating-review-item-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-12">
+                                        <div class="rating-review-item-info">
+                                            <div class="rrii-table">
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Рейтинг
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        <img src="img/7-stars.png" alt=""
+                                                             class="rrii-table-content-img">
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+
+                                                        Дата открытия
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        30.06.2009
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Официальный сайт
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        <a href="#" class="rrii-table-content-ref">
+                                                            csgo.ru
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Языки
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        Русский
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Бонус
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        50% от суммы первого депозита
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Платежные системы
+                                                    </span>
+                                                    <span class="rrii-table-content rrii-table-content-pays">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+			                                        </span>
+                                                </div>
+                                            </div>
+                                            <div class="rrii-description">Sed ut perspiciatis, unde omnis iste natus
+                                                error sit voluptatem accusantium doloremque laudantium, totam rem
+                                                aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
+                                                beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia
+                                                voluptas sit, aspernatur aut odit aut fugit, sed quia
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-review-item">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+                                        <div class="rating-review-item-logo">
+                                            <a href="#" class="rating-review-item-ref">
+                                                <img src="https://placehold.it/200x49" alt="Лого букмекера"
+                                                     class="rating-review-item-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-12">
+                                        <div class="rating-review-item-info">
+                                            <div class="rrii-table">
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Рейтинг
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        <img src="img/7-stars.png" alt=""
+                                                             class="rrii-table-content-img">
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+
+                                                        Дата открытия
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        30.06.2009
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Официальный сайт
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        <a href="#" class="rrii-table-content-ref">
+                                                            csgo.ru
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Языки
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        Русский
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Бонус
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        50% от суммы первого депозита
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Платежные системы
+                                                    </span>
+                                                    <span class="rrii-table-content rrii-table-content-pays">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+			                                        </span>
+                                                </div>
+                                            </div>
+                                            <div class="rrii-description">Sed ut perspiciatis, unde omnis iste natus
+                                                error sit voluptatem accusantium doloremque laudantium, totam rem
+                                                aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
+                                                beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia
+                                                voluptas sit, aspernatur aut odit aut fugit, sed quia
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-review-item">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+                                        <div class="rating-review-item-logo">
+                                            <a href="#" class="rating-review-item-ref">
+                                                <img src="https://placehold.it/200x49" alt="Лого букмекера"
+                                                     class="rating-review-item-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-12">
+                                        <div class="rating-review-item-info">
+                                            <div class="rrii-table">
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Рейтинг
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        <img src="img/7-stars.png" alt=""
+                                                             class="rrii-table-content-img">
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+
+                                                        Дата открытия
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        30.06.2009
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Официальный сайт
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        <a href="#" class="rrii-table-content-ref">
+                                                            csgo.ru
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Языки
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        Русский
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Бонус
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        50% от суммы первого депозита
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Платежные системы
+                                                    </span>
+                                                    <span class="rrii-table-content rrii-table-content-pays">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+			                                        </span>
+                                                </div>
+                                            </div>
+                                            <div class="rrii-description">Sed ut perspiciatis, unde omnis iste natus
+                                                error sit voluptatem accusantium doloremque laudantium, totam rem
+                                                aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
+                                                beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia
+                                                voluptas sit, aspernatur aut odit aut fugit, sed quia
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-review-item">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+                                        <div class="rating-review-item-logo">
+                                            <a href="#" class="rating-review-item-ref">
+                                                <img src="https://placehold.it/200x49" alt="Лого букмекера"
+                                                     class="rating-review-item-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-12">
+                                        <div class="rating-review-item-info">
+                                            <div class="rrii-table">
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Рейтинг
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        <img src="img/7-stars.png" alt=""
+                                                             class="rrii-table-content-img">
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+
+                                                        Дата открытия
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        30.06.2009
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Официальный сайт
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        <a href="#" class="rrii-table-content-ref">
+                                                            csgo.ru
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Языки
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        Русский
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Бонус
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        50% от суммы первого депозита
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Платежные системы
+                                                    </span>
+                                                    <span class="rrii-table-content rrii-table-content-pays">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+			                                        </span>
+                                                </div>
+                                            </div>
+                                            <div class="rrii-description">Sed ut perspiciatis, unde omnis iste natus
+                                                error sit voluptatem accusantium doloremque laudantium, totam rem
+                                                aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
+                                                beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia
+                                                voluptas sit, aspernatur aut odit aut fugit, sed quia
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-review-item">
+                                <div class="row">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+                                        <div class="rating-review-item-logo">
+                                            <a href="#" class="rating-review-item-ref">
+                                                <img src="https://placehold.it/200x49" alt="Лого букмекера"
+                                                     class="rating-review-item-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-12">
+                                        <div class="rating-review-item-info">
+                                            <div class="rrii-table">
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Рейтинг
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        <img src="img/7-stars.png" alt=""
+                                                             class="rrii-table-content-img">
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+
+                                                        Дата открытия
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        30.06.2009
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Официальный сайт
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        <a href="#" class="rrii-table-content-ref">
+                                                            csgo.ru
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Языки
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        Русский
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Бонус
+                                                    </span>
+                                                    <span class="rrii-table-content">
+                                                        50% от суммы первого депозита
+                                                    </span>
+                                                </div>
+                                                <div class="rrii-table-item">
+                                                    <span class="rrii-table-label">
+                                                        Платежные системы
+                                                    </span>
+                                                    <span class="rrii-table-content rrii-table-content-pays">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+                                                         <img src="https://placehold.it/105x60" alt="Платежная система"
+                                                              class="rrii-table-content-pays-img">
+			                                        </span>
+                                                </div>
+                                            </div>
+                                            <div class="rrii-description">Sed ut perspiciatis, unde omnis iste natus
+                                                error sit voluptatem accusantium doloremque laudantium, totam rem
+                                                aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
+                                                beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia
+                                                voluptas sit, aspernatur aut odit aut fugit, sed quia
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rating-content">
+                            <p class="rating-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.</p>
+                            <h3 class="rating-content-title">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit</h3>
+                            <p class="rating-content-text">et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit es</p>
+                            <ul class="rating-content-list">
+                                <li class="rating-content-list-item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li class="rating-content-list-item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li class="rating-content-list-item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li class="rating-content-list-item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li class="rating-content-list-item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li class="rating-content-list-item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                                <li class="rating-content-list-item">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </li>
+                            </ul>
+                            <h3 class="rating-content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                            <p class="rating-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="rating-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#"
+                                                                                                  class="rating-content-text-ref">онлайн
+                                    абра кадабра </a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="rating-content-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#"
+                                                                                                  class="rating-content-text-ref">играя
+                                    авада кедавра</a>баба нам ке валам
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="footer-top">
+                        <ul class="footer-top-list">
+                            <li class="footer-top-list__item">
+                                <a href="#" class="footer-top-list__item-ref">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="footer-top-list__item">
+                                <a href="#" class="footer-top-list__item-ref">
+                                    Рейтинг букмекерских контор
+                                </a>
+                            </li>
+                            <li class="footer-top-list__item">
+                                <a href="#" class="footer-top-list__item-ref">
+                                    Ставки на баскетбол
+                                </a>
+                            </li>
+                            <li class="footer-top-list__item">
+                                <a href="#" class="footer-top-list__item-ref">
+                                    Ставки на теннис
+                                </a>
+                            </li>
+                            <li class="footer-top-list__item">
+                                <a href="#" class="footer-top-list__item-ref">
+                                    Ставки на футбол
+                                </a>
+                            </li>
+                            <li class="footer-top-list__item">
+                                <a href="#" class="footer-top-list__item-ref">
+                                    Ставки на киберспорт
+                                </a>
+                            </li>
+                            <li class="footer-top-list__item">
+                                <a href="#" class="footer-top-list__item-ref">
+                                    Ставки на что-нибудь
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-bottom">
+                    <div class="col-xl-3 col-lg-4 col-sm-12 col-12">
+                        <div class="footer-bottom-logo">
+                            <a href="#" class="footer-bottom-logo__ref">
+                                <img src="https://placehold.it/200x50" alt="Логотип"
+                                     class="footer-bottom-logo__ref-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-sm-12 col-12 footer-bottom--rights">
+                        <div class="footer-bottom-right">
+                            <div class="footer-bottom-right-text">
+                                © 999 — 1999 Все права защищены Flex.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
